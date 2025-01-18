@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Role Selection</title>
+</head>
+<body>
+ <div class="wrapper">
+        <div class="header-section">
+            <h1>AI-Powered Analytical Profile Analysis and Evaluation System</h1>
+        </div>
+    <!----------------------------- Role Selection Section ----------------------------------->    
+    <div class="role-selection">
+        <h1>Select Your Role</h1>
+        <p>Choose the role that best fits your purpose:</p>
+        <div class="role-cards">
+            <!-- Admin Role -->
+            <div class="role-card">
+                <i class="bx bx-user-check"></i>
+                <h2>Admin</h2>
+                <p>Manage platform operations and oversee activities.</p>
+                <a href="Admin/admin_index.html" target="_blank">
+                <button class="btn">Get Started</button>
+                </a>
+            </div>
+            <!-- Employer Role -->
+            <div class="role-card">
+                <i class="bx bx-briefcase"></i>
+                <h2>Employer</h2>
+                <p>Post jobs, review candidates, and manage hiring.</p>
+                <a href="Employer/employer_index.html" target="_blank">
+                <button class="btn">Get Started</button>
+                </a>
+                
+            </div>
+            <!-- Candidate Role -->
+            <div class="role-card">
+                <i class="bx bx-search-alt"></i>
+                <h2>Candidate</h2>
+                <p>Find jobs, apply, and manage your profile.</p>
+                <a href="Candidate/candidate_index.html" target="_blank">
+                <button class="btn">Get Started</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>   
+
+<!----------------------------- Scripts ----------------------------------->
+<script>
+    function myMenuFunction() {
+        var i = document.getElementById("navMenu");
+        if (i.className === "nav-menu") {
+            i.className += " responsive";
+        } else {
+            i.className = "nav-menu";
+        }
+    }
+</script>
+</body>
+</html>
